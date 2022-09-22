@@ -7,6 +7,7 @@ const uuid=require('uuid')
 const Hospital = db.hospital_attributes;
 const Doctor = db.doctor_attributes;
 
+console.log('doctor controller')
 const addDoctor = async (req, res) => {
   //console.log(req.body);
   let info = {
