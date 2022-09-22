@@ -1,0 +1,32 @@
+"use strict";
+const { Model } = require("sequelize");
+module.exports = (sequelize, DataTypes) => {
+  class Schedule extends Model {
+    /**
+     * Helper method for defining associations.
+     * This method is not a part of Sequelize lifecycle.
+     * The `models/index` file will call this method automatically.
+     */
+    static associate(models) {
+      // define association here
+      Schedule.hasMany(models.DocsHaveSchedules, {
+        as: "docshaveschedules",
+        onDelete: "cascade",
+        onUpdate: "cascade",
+      });
+    }
+  }
+  Schedule.init(
+    {
+      startTime: DataTypes.TIME,
+      endTime: DataTypes.TIME,
+      breakTime: DataTypes.TIME,
+      days: DataTypes.STRING,
+    },
+    {
+      sequelize,
+      modelName: "Schedule",
+    }
+  );
+  return Schedule;
+};
