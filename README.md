@@ -42,3 +42,7 @@ Technologies used
 ├── Migrations with Sequelize CLI for Sequelize models 
 ├── Middleware validation. 
 ├── Use of async await in asynchrony method.
+
+
+### ☄ Tecnhnologies
+<a href="https://nextjs.org">React</a>
