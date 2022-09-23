@@ -45,4 +45,14 @@ Technologies used
 ```
 
 ### ☄ Tecnhnologies
-<a href="https://nextjs.org">React</a>
+- <a href="#">NodeJS (v16.13.2)</a>
+- <a href="#">Passport.Js</a>
+- <a href="#">Express.Js</a>
+- <a href="#">Sequelize ORM</a>
+- <a href="#">Migrations with Sequelize CLI for Sequelize models</a>
+- <a href="#">Middleware validation.</a>
+- <a href="#">async await</a>
+- ### ☄ Database
+- <a href="#">MySQL</a>
+- <a href="#">Apche server</a>
+
