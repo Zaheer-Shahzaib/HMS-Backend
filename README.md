@@ -40,7 +40,7 @@ Number of patients registered.
 - <a href="#">Migrations with Sequelize CLI for Sequelize models</a>
 - <a href="#">Middleware validation.</a>
 - <a href="#">async await</a>
-- ### ☄ Database
+### ☄ Database
 - <a href="#">MySQL</a>
 - <a href="#">Apche server</a>
 
