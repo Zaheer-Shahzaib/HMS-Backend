@@ -16,13 +16,13 @@ This Activity shows the flow between the activity of Doctor, Patient, Hospital a
 **There should be and option to Register/Login following users**  
 
 Hospital  
-
 Doctor  
+Patient 
 
-Patient  
 **On Login Based type of user navigate to respective view.**
 
-##Hospital 
+##Hospital
+
 Hospital admin users should be able to add/remove registered doctors in hospitals. 
 
 Hospital admin should be able to view listing and details of doctors which are added in the hospital. 
