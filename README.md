@@ -10,12 +10,13 @@ This Activity shows the flow between the activity of Doctor, Patient, Hospital a
 -Hospital Admin 
 
 -Patient  
-```
-.
-├── Documentation
-│   └── documentation.html
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── LICENSE
-|--- Main
-|  ---sr.js
+## Features of this main activity is to manage the Following features.
+**Register/Login **
+
+######● There should be and option to Register/Login following users  
+
+Hospital  
+
+Doctor  
+
+Patient  
