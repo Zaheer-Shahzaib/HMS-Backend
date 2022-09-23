@@ -56,3 +56,10 @@ Technologies used
 - <a href="#">MySQL</a>
 - <a href="#">Apche server</a>
 
+## Quick start
+
+- `npm i argon-dashboard-react`
+- [Download from Github](https://github.com/Zaheer-Shahzaib/HMS-Backend/archive/refs/heads/master.zip).
+- Install with [Bower](https://bower.io/?ref=creativetim): `bower install argon-dashboard-react`.
+- Clone the repo: `git clone https://github.com/Zaheer-Shahzaib/HMS-Backend.git`.
+
