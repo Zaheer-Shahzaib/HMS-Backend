@@ -17,3 +17,5 @@ This Activity shows the flow between the activity of Doctor, Patient, Hospital a
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
 ├── LICENSE
+|--- Main
+|  ---sr.js
