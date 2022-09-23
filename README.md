@@ -32,18 +32,6 @@ Number of doctors registered.
 Number of patients registered. 
 **Should be able to view the details of hospital/doctors/patients.**
 
-```
-Technologies used
-├── NodeJS (v16.13.2) 
-├── Passport.Js for Authentication
-├── Express.Js Framework
-├── Sequelize ORM
-├── MySQL using xampp server 
-├── Migrations with Sequelize CLI for Sequelize models 
-├── Middleware validation. 
-├── Use of async await in asynchrony method.
-```
-
 ### ☄ Tecnhnologies
 - <a href="#">NodeJS (v16.13.2)</a>
 - <a href="#">Passport.Js</a>
@@ -58,7 +46,7 @@ Technologies used
 
 ## Quick start
 
-- `npm i argon-dashboard-react`
+- `npm install`
 - [Download from Github](https://github.com/Zaheer-Shahzaib/HMS-Backend/archive/refs/heads/master.zip).
 - Install with [Bower](https://bower.io/?ref=creativetim): `bower install argon-dashboard-react`.
 - Clone the repo: `git clone https://github.com/Zaheer-Shahzaib/HMS-Backend.git`.
