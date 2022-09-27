@@ -24,11 +24,11 @@ module.exports = (sequelize, DataTypes) => {
       //   foreignKey:'userId'
         
       // });
-      // Role.belongsToMany(models.Permission, {
-      //   through: 'RolePermission',
-      //   as: 'permissions',
-      //   foreignKey: 'role_id'
-      // });
+      Role.belongsToMany(models.Permission, {
+        through: 'RolePermission',
+        as: 'permissions',
+        foreignKey: 'RoleId'
+      });
     }
   }
   Role.init({

@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   RolePermission.init({
-    role_id: DataTypes.INTEGER,
     perm_id: DataTypes.INTEGER
   }, {
     sequelize,
