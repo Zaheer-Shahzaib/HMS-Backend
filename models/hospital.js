@@ -13,10 +13,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      hospital.hasMany(models.User, { as: "users",
-      onDelete:"cascade",
-      onUpdate:"cascade"
-    });
+    //   hospital.hasMany(models.User, { as: "users",
+    //   onDelete:"cascade",
+    //   onUpdate:"cascade"
+    // });
       // Role.belongsToMany(models.Permission, {
       //   through: 'RolePermission',
       //   as: 'permissions',

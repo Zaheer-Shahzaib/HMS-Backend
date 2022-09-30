@@ -14,7 +14,9 @@ router_user.post('/',
 user_controler.addUser)
 
 // Get List of Users
-router_user.get('/', passport.authenticate('jwt', {session: false}), user_controler.getUser)
+router_user.get('/',
+//  passport.authenticate('jwt', {session: false}),
+  user_controler.getUser)
 
 
 // Get User by ID

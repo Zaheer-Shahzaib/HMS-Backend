@@ -14,19 +14,21 @@ module.exports = (sequelize, DataTypes) => {
       //   foreignKey: "user_id",
       //   as: "role",
       // });
-      User.belongsTo(models.hospital, {
-        foreignKey: "hospitalId",
-        as: "hospital",
-        onDelete:"cascade",
-        onUpdate:"cascade"
-      });
+      // User.belongsTo(models.hospital, {
+      //   foreignKey: "hospitalId",
+      //   as: "hospital",
+      //   onDelete:"cascade",
+      //   onUpdate:"cascade"
+      // });
       User.belongsTo(models.Role, {
         foreignKey: "RoleId",
         as: "role",
         onDelete:"cascade",
         onUpdate:"cascade"
       });
-      
+      User.hasMany(models.Appointment, {
+        as: 'appointment'
+      })
     }
   }
   User.init(

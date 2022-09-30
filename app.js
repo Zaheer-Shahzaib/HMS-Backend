@@ -37,7 +37,7 @@ app.use('/api/v1/users', usersRouter);
 app.use('/api/v1/roles', rolesRouter);
 app.use('/api/v1/hospital', hospitalRouter);
 app.use('/api/v1/appointment/createAppointment',appointmentRouter)
-app.use('/api/v1/slots', slotRouter);
+//app.use('/api/v1/slots', slotRouter);
 
 
 

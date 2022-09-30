@@ -37,7 +37,7 @@ const addUser= async (req,res)=>{
 
 const getUser= async (req,res)=>{
     User
-    .findAll()
+    .findAll({limit: 3})
     .then((users) => res.status(200).send(users))
     .catch((error) => {
       res.status(400).send(error);
