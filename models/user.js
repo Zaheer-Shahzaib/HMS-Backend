@@ -29,6 +29,9 @@ module.exports = (sequelize, DataTypes) => {
       User.hasMany(models.Appointment, {
         as: 'appointment'
       })
+      User.hasMany(models.Schedule,{
+        as:"schedule"
+      })
     }
   }
   User.init(

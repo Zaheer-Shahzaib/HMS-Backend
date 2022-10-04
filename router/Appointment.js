@@ -3,8 +3,9 @@ const appointmentController = require("../Controllers/Appointments/Appointments_
 const express=require('express')
 const appointmentRouter=express.Router();
 
-appointmentRouter.post('/',appointmentController.appointmentCreate)
-//appointmentRouter.get('/getappointment',appointmentController.findAppointment)
+appointmentRouter.post('/create',appointmentController.appointmentCreate)
+appointmentRouter.get('/getappointment',appointmentController.getappointment)
+appointmentRouter.get('/avalible',appointmentController.scheduleByAppointmentPatient)
 
 
 module.exports=appointmentRouter

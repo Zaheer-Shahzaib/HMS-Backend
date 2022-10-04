@@ -17,6 +17,11 @@ module.exports = (sequelize, DataTypes) => {
         onDelete:"cascade",
        onUpdate:"cascade"
       })
+      Appointment.belongsTo(models.Schedule, {
+        as: "schedule",
+        onDelete: "cascade",
+        onUpdate: "cascade",
+      });
     }
   }
   Appointment.init({

@@ -9,8 +9,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Schedule.hasMany(models.DocsHaveSchedules, {
-        as: "docshaveschedules",
+      Schedule.belongsTo(models.User, {
+        as: "User",
         onDelete: "cascade",
         onUpdate: "cascade",
       });
