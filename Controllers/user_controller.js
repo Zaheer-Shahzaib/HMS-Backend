@@ -22,7 +22,7 @@ const addUser= async (req,res)=>{
                 password: req.body.password,
                 fullname: req.body.fullname,
                 phone: req.body.phone,
-                RoleId: req.body.RoleId
+                RoleId:req.body.RoleId
         }
               
               const user=await User.create(info)

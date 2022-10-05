@@ -16,7 +16,7 @@ var flag= false
 const appointmentCreate = async (req, res)=>{
   const date = moment().format("MM:DD:YYYY");
   console.log(date);
-  const doctorName= req.body.scheduleId
+  const scheduleId= req.body.scheduleId
   const doctorFind= await User.findOne({
    include:[{
     model:Schedule,
@@ -30,7 +30,7 @@ const appointmentCreate = async (req, res)=>{
   else
     {const newappointment = {
         UserId:doctorFind.id,
-        scheduleId:doctorName,
+        scheduleId:scheduleId,
         Date: date,
         StartTime: req.body.StartTime,
         EndTime:  req.body.EndTime,
