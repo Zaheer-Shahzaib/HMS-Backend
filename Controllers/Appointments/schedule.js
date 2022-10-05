@@ -85,6 +85,8 @@ const makeSchedule = async (req, res) => {
   //console.log(err);
 		return res.status(400).send(err)
 }
+
+
 };
 const getshcedule= async (req, res)=>{
   const findDoctor=await Schedule.findAll({
