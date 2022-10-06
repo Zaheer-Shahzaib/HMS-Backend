@@ -87,14 +87,12 @@ const makeSchedule = async (req, res) => {
 };
 const getshcedule = async (req, res) => {
   await Schedule.findAll({
-    limit:2,
     include: [
       {
         model: User,
         as: "User",
-        attributes:{
-          exclude: ['createdAt', 'updatedAt']
-        },
+        attributes:
+           ['createdAt', 'updatedAt'],
         //attributes: ["fullName",'phone','email'],
         where: {
           state: Sequelize.col("Schedule.UserId"),
