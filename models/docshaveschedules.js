@@ -14,7 +14,9 @@ module.exports = (sequelize, DataTypes) => {
       DocsHaveSchedules.belongsTo(models.User,{
         as:'user'
       })
-      
+      DocsHaveSchedules.belongsTo(models.Schedule,{
+        as:'schedule'
+      })
     }
   }
   DocsHaveSchedules.init({
