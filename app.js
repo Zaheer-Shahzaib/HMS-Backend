@@ -29,6 +29,8 @@ var hospitalRouter=require('./router/hospital')
 var appointmentRouter=require('./router/Appointment')
 var slotRouter=require('./router/slots')
 var scheduleRouter=require('./router/Schedule')
+var mappingRouter=require('./router/mapingRouter')
+
 
 
 
@@ -39,6 +41,7 @@ app.use('/api/v1/roles', rolesRouter);
 app.use('/api/v1/hospital', hospitalRouter);
 app.use('/api/v1/appointment',appointmentRouter)
 app.use('/api/v1/schedule', scheduleRouter);
+app.use('/api/v1/docSchedule', mappingRouter);
 
 
 
