@@ -58,10 +58,10 @@ const getAvailableSlot = async (req, res) => {
 const makeSchedule = async (req, res) => {
   try {
     // make schedule by the doctor.
-    const userEmail = req.body.userEmail;
+    const id = '16'
     const doctor = await User.findOne({
       where: {
-        email: userEmail,
+        id: id,
       },
     });
     if (doctor === null) {
@@ -91,9 +91,7 @@ const getshcedule = async (req, res) => {
       {
         model: User,
         as: "User",
-        attributes:
-           ['createdAt', 'updatedAt'],
-        //attributes: ["fullName",'phone','email'],
+        attributes: ["fullName",'phone','email'],
         where: {
           state: Sequelize.col("Schedule.UserId"),
         },

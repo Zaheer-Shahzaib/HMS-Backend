@@ -24,7 +24,7 @@ const appointmentCreate = async (req, res)=>{
     where:{state:Sequelize.col(`schedule.id`)}
    }]
   })
-  if(doctorName.length===0){
+  if(doctorFind.length===0){
     res.send("No doctor Find").status(400)
   }
   else

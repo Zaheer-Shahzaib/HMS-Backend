@@ -21,7 +21,16 @@ module.exports = (sequelize, DataTypes) => {
       startTime: DataTypes.TIME,
       endTime: DataTypes.TIME,
       breakTime: DataTypes.TIME,
-      days: DataTypes.STRING,
+      days:{
+      type:DataTypes.STRING,
+      get() {
+        return this.getDataValue('days').split(';')
+        },
+        set(val){
+        this.setDataValue('days',val.join(';'))
+        }
+      }
+      
     },
     {
       sequelize,

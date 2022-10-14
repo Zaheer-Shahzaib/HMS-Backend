@@ -34,8 +34,10 @@ user_controler.updateUser
 );
 
 // Delete a User
-router_user.delete('/:id', passport.authenticate('jwt', {
-  session: false
-}),user_controler.deleteUser);
+router_user.delete('/:id', 
+// passport.authenticate('jwt', {
+//   session: false
+// }),
+user_controler.deleteUser);
 
 module.exports = router_user;
